@@ -1,0 +1,628 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="protfolio.css">
+
+</head>
+
+<body>
+
+    <div class="navbar">
+        <h3>Monisha R</h3>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <nav>
+
+            <ul class="nav">
+
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#certificate">Certificate</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </div>
+
+
+    <div class="homepage">
+
+        <section id="home">
+
+            <!-- Content -->
+            <div class="home-item">
+
+                <h3>Hello, I'm</h3>
+
+                <h1>Monisha R</h1>
+
+                <h2>Full Stack Developer</h2>
+
+                <p>
+                    I create modern and responsive websites
+                    using HTML and CSS.
+                </p>
+                <button class="button">
+
+                    <h3><a href="#contact">Contact</a></h3>
+
+
+                </button>
+               
+
+                <button class="button">
+                    <h3><a href="Moni1-Resume.pdf" download>Download Resume</a></h3>
+                </button>
+
+            </div>
+
+
+            <!-- Image -->
+            <div class="img-item">
+
+                <img class="image" src="moni3.png" alt="Monisha">
+
+            </div>
+
+        </section>
+
+        <section id="about">
+            <div class="aboutpage">
+
+                <h1>About Me</h1>
+                <br>
+                <br><br>
+
+                <p>
+                    Hello! I'm <b class="text" style="color: rgb(136, 136, 136);">Monisha R</b>, an aspiring Front-End
+                    Developer with a passion for creating clean, modern, and user-friendly websites.
+                </p>
+
+                <p>
+                    I have a strong interest in web development and enjoy turning ideas into responsive and interactive
+                    digital experiences. I am currently building my skills in HTML, CSS, JavaScript, and modern web
+                    development technologies.
+                </p>
+
+                <p>
+                    I am a motivated learner who enjoys solving problems, exploring new technologies, and continuously
+                    improving my skills. My goal is to grow as a Full Stack Developer and create meaningful,
+                    high-quality web applications.
+                </p>
+
+            </div>
+        </section>
+
+
+       <!-- ----Education Section ---- -->
+
+<section id="education">
+
+    <div class="educationpage">
+
+        <h1>Education</h1>
+
+        <div class="education-container">
+
+            <div class="education-box1">
+
+                <h2>College / Degree</h2>
+
+                <p><b>Course:</b> B.Sc Computer Science</p>
+                <p><b>College:</b> The Kaveri Engineering College</p>
+                <p><b>Year:</b> 2020 - 2024</p>
+                <p><b>CGPA:</b> 7.98 / 10</p>
+
+            </div>
+
+
+            <div class="education-box2">
+
+                <h2>Current Course</h2>
+
+                <p><b>Course:</b> Python Full Stack Development</p>
+                <p><b>Institute:</b> Elevate Academy</p>
+                <p><b>Location:</b> Coimbatore</p>
+                <p><b>Status:</b> Currently Pursuing</p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="skills">
+
+    <div class="skillpage">
+
+        <h1>My Skills</h1>
+
+        <p class="skill-title">
+            Click a technology to explore my projects
+        </p>
+
+        <div class="skill-container">
+
+            <!-- HTML -->
+            <div class="skill-card html" onclick="showProjects('html')">
+
+                <img src="./html1.png"
+                     alt="HTML"
+                     class="skill-image">
+
+                <h2>HTML</h2>
+
+                <p>Structure & Web Design</p>
+
+            </div>
+
+
+            <!-- CSS -->
+            <div class="skill-card css" onclick="showProjects('css')">
+
+                <img src="./css.png"
+                     alt="CSS"
+                     class="skill-image">
+
+                <h2>CSS</h2>
+
+                <p>Styling & Responsive Design</p>
+
+            </div>
+
+
+            <!-- JavaScript -->
+            <div class="skill-card javascript"
+                 onclick="showProjects('javascript')">
+
+                <img src="./js2.png"
+                     alt="JavaScript"
+                     class="skill-image">
+
+                <h2>JavaScript</h2>
+
+                <p>Interactive Web Development</p>
+
+            </div>
+
+
+            <!-- Python -->
+            <div class="skill-card python"
+                 onclick="showProjects('python')">
+
+                <img src="./python2.jpg"
+                     alt="Python"
+                     class="skill-image">
+
+                <h2>Python</h2>
+
+                <p>Backend Development</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Projects Display -->
+
+        <div id="project-display">
+
+            <h2>Explore My Skills</h2>
+
+            <p>Click any technology above to view related projects.</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="projects">
+
+```
+<div class="projectpage">
+
+    <h1>My Projects</h1>
+
+    <div class="project-container">
+
+        <div class="project-card">
+
+            <!-- Project Image -->
+          <a href="http://127.0.0.1:5501/HTML/portfolio.html#home" target="_blank">
+
+    <img src="./portfolio.png"
+         alt="Personal Portfolio"
+         class="project-image">
+
+</a>
+
+            <!-- Project Name -->
+            <h2>Personal Portfolio Website</h2>
+
+            <!-- Short Description -->
+            <ul>
+                <li>Responsive personal portfolio website</li>
+                <li>Clean and modern user interface</li>
+               
+            </ul>
+
+            <!-- Technologies -->
+            <h4>Technologies Used:</h4>
+
+            <div class="technology">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Bootstrap</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+<!---Certificate Section-->
+<section id="certificate">
+
+    <div class="certificatepage">
+
+        <h1>Certificates</h1>
+
+        <div class="certificate-container">
+
+            <!-- HTML Certificate -->
+            <div class="certificate-card">
+                <img src="./html.png"
+                     alt="HTML Certificate"
+                     class="certificate-image">
+                     <br>
+                     <br>
+
+                <h3>Web Development using HTML</h3>
+                <p>IBM Developer Skills Network</p>
+            </div>
+
+
+            <!-- Python Certificate -->
+            <div class="certificate-card">
+                <img src="./python.png"
+                     alt="Python Certificate"
+                     class="certificate-image">
+<br><br>
+                <h3>Python for Web Development</h3>
+                <p>IBM Developer Skills Network</p>
+            </div>
+
+
+            <!-- SQL Certificate -->
+            <div class="certificate-card">
+                <img src="./sql.png"
+                     alt="SQL Certificate"
+                     class="certificate-image">
+<br><br>
+                <h3>SQL and Relational Databases 101</h3>
+                <p>IBM Developer Skills Network</p>
+            </div>
+
+
+            <!-- Full Stack Certificate -->
+            <div class="certificate-card">
+                <img src="./coursec.png"
+                     alt="Full Stack Certificate"
+                     class="certificate-image">
+<br><br>
+                <h3>Master in Full Stack Web Development with Python</h3>
+                <p>IT Vedant</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section><!-- ---- Contact Section ---- -->
+
+<!-- ---- Contact Section ---- -->
+
+<section id="contact">
+
+    <div class="contactpage">
+
+        <div class="contact-heading">
+            <h1>CONTACT</h1>
+            <h2>Let's Build Something <span>Great.</span></h2>
+
+            <h4>
+                Have an idea, opportunity, or project in mind?
+                Let's connect and make it happen.
+            </h4>
+        </div>
+
+
+        <div class="contact-container">
+
+
+            <!-- Left Side -->
+
+            <div class="contact-left">
+
+                <div class="contact-line">
+                    <span></span>
+                    <p>AVAILABLE FOR OPPORTUNITIES</p>
+                </div>
+
+
+                <div class="contact-details">
+
+                    <!-- Email -->
+
+                    <div class="contact-item">
+
+                        <div class="number">01</div>
+
+                        <div>
+                            <h3>Email Me</h3>
+                            <p>moniradha1234@gmail,com</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Phone -->
+
+                    <div class="contact-item">
+
+                        <div class="number">02</div>
+
+                        <div>
+                            <h3>Call Me</h3>
+                            <p>+91 90039 70420</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Location -->
+
+                    <div class="contact-item">
+
+                        <div class="number">03</div>
+
+                        <div>
+                            <h3>Based In</h3>
+                            <p>Coimbatore, Tamil Nadu, India</p>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Status -->
+
+                    <div class="contact-item">
+
+                        <div class="number">04</div>
+
+                        <div>
+                            <h3>Current Focus</h3>
+                            <p>Python Full Stack Development</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Social Links -->
+
+                <div class="social-links">
+
+                    <p>FIND ME ONLINE</p>
+
+                    <div>
+                        <a href="https://www.linkedin.com/in/monishar876/" target="_blank">LinkedIn ↗</a>
+                        <a href="https://github.com/monishar1" target="_blank">GitHub ↗</a>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Right Side Contact Form -->
+
+            <div class="contact-right">
+
+                <p class="form-small-title">SEND A MESSAGE</p>
+
+                <h2>Tell me about your project.</h2>
+
+                <form>
+
+                    <div class="input-group">
+
+                        <input type="text"
+                               placeholder="Your Name"
+                               required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input type="email"
+                               placeholder="Your Email"
+                               required>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <input type="text"
+                               placeholder="Subject">
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <textarea
+                            rows="5"
+                            placeholder="Write your message..."
+                            required></textarea>
+
+                    </div>
+
+
+                    <button type="submit">
+                        SEND MESSAGE <span>→</span>
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+
+        <!-- Google Map -->
+
+        <div class="map-section">
+
+            <div class="map-title">
+
+                <div>
+                    <p>LOCATION</p>
+                    <h2>Based in Coimbatore</h2>
+                </div>
+
+                <span>INDIA 🇮🇳</span>
+
+            </div>
+
+
+            <div class="map">
+
+                <iframe
+                    src="https://www.google.com/maps?q=Coimbatore,Tamil%20Nadu&output=embed"
+                    loading="lazy"
+                    allowfullscreen="">
+                </iframe>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bottom Line -->
+
+        <div class="contact-footer">
+
+            <p>© 2026 Monisha R. All Rights Reserved.</p>
+
+            <p>Designed & Built with ❤️ using HTML & CSS</p>
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+function showProjects(skill) {
+
+    let projectDisplay = document.getElementById("project-display");
+
+
+    if (skill === "html") {
+
+        projectDisplay.innerHTML = `
+            <h2>HTML Tasks</h2>
+
+            <p>Personal Portfolio</p>
+            <p>Registration Form</p>
+            <p>Resume Page</p>
+        `;
+    }
+
+
+    else if (skill === "css") {
+
+        projectDisplay.innerHTML = `
+            <h2>CSS Tasks</h2>
+
+            <p>Flexbox Practice</p>
+            <p>CSS Grid Practice</p>
+            <p>Hover Animation</p>
+        `;
+    }
+
+
+    else if (skill === "javascript") {
+
+        projectDisplay.innerHTML = `
+            <h2>JavaScript Tasks</h2>
+
+            <p>Functions</p>
+            <p>Loops</p>
+            <p>Calculator</p>
+            <p>Number Guessing Game</p>
+            <p>BMI Calculator</p>
+        `;
+    }
+
+
+    else if (skill === "python") {
+
+        projectDisplay.innerHTML = `
+            <h2>Python Tasks</h2>
+
+            <p>Python Basics</p>
+            <p>Simple Programs</p>
+            <p>Mini Projects</p>
+        `;
+    }
+
+}
+
+function toggleMenu() {
+    document.querySelector(".navbar nav").classList.toggle("show");
+}
+
+
+</script>
+
+</body>
+
+</html>
