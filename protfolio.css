@@ -351,146 +351,195 @@ background-image: url("../HTML/images/code3.jpg");
 }
 
 
-/* Project Display */
+/* ---- Project Display ---- */
 
 #project-display {
     margin: 60px auto 0;
     max-width: 700px;
     padding: 30px;
     color: white;
-
-    border-top: 2px solid #67dbe8;
+    border-top: 2px solid #b89b3c;
 }
 
 #project-display h2 {
-    color: #67dbe8;
+    color: #d4af37;
     margin-bottom: 15px;
 }
 
 #project-display p {
     color: #d8e6e8;
+    line-height: 1.8;
 }
+
 
 /* ---- Projects Section ---- */
 
 .projectpage {
-background-color: #19283e;
-min-height: 100vh;
-padding: 50px 50px;
-text-align: center;
-border: 5px solid gray;
-}
+    background: linear-gradient(
+        135deg,
+        #100f0c,
+        #201d18,
+        #100f0c
+    );
 
-.projectpage h1 {
-color: white;
-margin-bottom: 50px;
-}
-
-/* Project Container */
-
-/* ---- Projects Section ---- */
-
-.projectpage {
-    background-color: #19283e;
     min-height: 100vh;
-    padding: 50px 50px;
+    padding: 60px 30px;
     text-align: center;
-    border: 5px solid gray;
+    border: 5px solid #777;
+    box-sizing: border-box;
 }
 
+
+/* ---- Projects Heading ---- */
+
 .projectpage h1 {
-    color: white;
+    color: #d4af37;
+    font-size: 38px;
     margin-bottom: 50px;
 }
 
 
-/* Project Container */
+/* ---- Project Container ---- */
 
 .project-container {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+
+    /* Space between cards */
+    gap: 60px;
+
+    /* Responsive layout */
+    flex-wrap: wrap;
+
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 
-/* Project Card */
+/* ---- Project Card ---- */
 
 .project-card {
     width: 500px;
-    background-color: #2c858f;
+    max-width: 100%;
+
+    background: linear-gradient(
+        145deg,
+        #29251d,
+        #171511
+    );
+
     color: white;
     padding: 15px;
-    border: 5px solid gray;
-    border-radius: 15px;
+
+    border: 5px solid #9c8540;
+    border-radius: 16px;
+
     text-align: left;
 
-    transition: 0.5s;
+    box-sizing: border-box;
 
-    /* Move animation */
+    transition:
+        box-shadow 0.4s ease,
+        border-color 0.4s ease;
+
+    /* Floating Animation */
     animation: projectAnimation 2s ease-in-out infinite alternate;
 }
 
 
-/* Project Moving Animation */
+/* ---- Project Moving Animation ---- */
 
 @keyframes projectAnimation {
-
-    0% {
-        transform: translateY(0);
+    from {
+        translate: 0 0;
     }
 
-    100% {
-        transform: translateY(15px);
+    to {
+        translate: 0 10px;
     }
 }
 
 
-/* Project Image */
+/* ---- Project Image ---- */
 
 .project-image {
+    display: block;
+
     width: 100%;
     height: 220px;
+
     object-fit: cover;
+
     border-radius: 10px;
-    transition: 0.5s;
+
+    transition: transform 0.4s ease;
 }
 
 
-/* Project Name */
+/* ---- Project Name ---- */
 
 .project-card h2 {
+    color: #d4af37;
+
     text-align: center;
+
+    font-size: 28px;
+
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
-/* Description */
+/* ---- Project Description ---- */
 
 .project-card ul {
     line-height: 2;
+
     margin-top: 15px;
+    padding-left: 25px;
+
+    color: #f0f0f0;
+}
+
+.project-card li {
+    margin-bottom: 5px;
 }
 
 
-/* Project Hover */
+/* ---- Technologies Heading ---- */
+
+.project-card h3 {
+    color: #ffffff;
+
+    font-size: 22px;
+
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+
+/* ---- Project Hover Effect ---- */
 
 .project-card:hover {
-    transform: translateY(-15px) scale(1.03);
-    box-shadow: 0px 10px 25px #67dbe8;
-    cursor: pointer;
+    border-color: #d4af37;
 
-    /* Stop moving when hover */
+    box-shadow: 0 10px 30px #d4af3760;
+
     animation-play-state: paused;
+
+    cursor: pointer;
 }
 
 
-/* Image Hover */
+/* ---- Image Hover Effect ---- */
 
 .project-card:hover .project-image {
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 
-/* Technologies */
+/* ---- Technologies ---- */
 
 .technology {
     text-align: center;
@@ -499,12 +548,120 @@ margin-bottom: 50px;
 
 .technology span {
     display: inline-block;
+
     background-color: #130f31b0;
+
+    color: #f5e6b3;
+
     padding: 8px 15px;
+
     margin: 5px;
+
+    border: 1px solid #9c8540;
     border-radius: 20px;
+
+    font-size: 15px;
+
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease;
 }
 
+
+/* ---- Technology Hover ---- */
+
+.technology span:hover {
+    background-color: #d4af37;
+    color: #171511;
+}
+
+
+/* ---- Tablet Responsive ---- */
+
+@media (max-width: 1100px) {
+
+    .project-container {
+        gap: 25px;
+    }
+
+    .project-card {
+        width: 450px;
+    }
+
+}
+
+
+/* ---- Mobile Responsive ---- */
+
+@media (max-width: 768px) {
+
+    .projectpage {
+        padding: 40px 15px;
+    }
+
+    .projectpage h1 {
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .project-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .project-card {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .project-image {
+        height: 200px;
+    }
+
+    .project-card h2 {
+        font-size: 23px;
+    }
+
+    .project-card h3 {
+        font-size: 20px;
+    }
+
+    .technology span {
+        padding: 7px 12px;
+        font-size: 14px;
+    }
+
+}
+
+
+/* ---- Small Mobile Responsive ---- */
+
+@media (max-width: 400px) {
+
+    .projectpage {
+        padding: 30px 10px;
+    }
+
+    .project-card {
+        padding: 10px;
+        border-width: 3px;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .project-card h2 {
+        font-size: 20px;
+    }
+
+    .project-card ul {
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+}
 
 /* ---- Certificate Section ---- */
 
